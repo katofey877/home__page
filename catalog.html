@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Каталог"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="page">
+			<div class="page__preview preview">
+				<div class="preview__container _container">
+					<div class="preview__title title">ALL WATCHES</div>
+				</div>
+			</div>
+			<div class="page__navigation navigation">
+				<div class="navigation__container _container">
+					<div class="navigation__body">
+						<ul class="navigation__bread-crumbs">
+							<li><a href="" class="navigation__link">Home/</a></li>
+							<li><a href="" class="navigation__link">Women’s/</a></li>
+							<li><span>All watches</span></li>
+						</ul>
+						<form action="#" class="navigation__form">
+							<div class="navigation__line">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Search products" class="navigation__input">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>
